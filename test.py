@@ -1,3 +1,3 @@
-names = ['James', 'Tom', 'Sam']
-for index, name in enumerate(names, start=1):
-    print(index, name)
+s=range(1,4)
+for b in s:
+    print(b)
