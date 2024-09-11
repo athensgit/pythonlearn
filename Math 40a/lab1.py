@@ -7,15 +7,15 @@ x = 0
 
 while x < 4399:
     w, l = worldseries1.worldseries(.65, 7)
-    losing_team_wins1 = w
-    losing_team_wins2 = l
+    better_team_wins = w
+    worse_team_wins = l
     x = x + 1
     if w<l:
-        print (losing_team_wins1)
-        data.append(losing_team_wins1)
+        print (better_team_wins)
+        data.append(better_team_wins)
     if l<w:
-        print(losing_team_wins2)
-        data.append(losing_team_wins2)
+        print(worse_team_wins)
+        data.append(worse_team_wins)
 
 plt.hist(data, bins=4, color='skyblue', edgecolor='black')
 
