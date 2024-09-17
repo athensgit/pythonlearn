@@ -1,4 +1,4 @@
-import worldseries1
+import worldseries2
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -7,7 +7,7 @@ x = 0
 data = []
 
 while x < 44:
-    w, l = worldseries1.worldseries(.65, 7)
+    w, l = worldseries2.worldseries(.65, 7)
     better_team_wins = w
     worse_team_wins = l
     x = x + 1

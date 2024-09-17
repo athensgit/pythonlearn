@@ -14,11 +14,11 @@ def worldseries(p, N): #defines worldseries function
     p is the probability that the best team wins
     N is the number of games in the world series , usually take N=7
     """
-    win = 0 #value for win starting at 0
-    lose = 0 #value for lose starting at 0
-    while (max(win, lose) < math.floor(N/2)+1): 
+    win = 0 #value for win starts at 0
+    lose = 0 #value for lose starts at 0
+    while (max(win, lose) < math.floor(N/2)+1): #loop that stops once one team wins/loses 4 games out of 7)
         if random.random() < p: #if the random generator generates a value under .65
             win = win + 1 #add to win tally
-        else :
+        else:
             lose = lose +1 #otherwise, add to loss tally
     return win, lose #return randomly generated win and loss tally
